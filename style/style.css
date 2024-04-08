@@ -7,6 +7,22 @@
     background-color: black;
     color: white;
 }
+.projects p
+{
+    padding: 10px;
+    font-weight: bold;
+}
+.projects a:hover
+{
+    transition-duration: 1s;
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
+}
+.projects a
+{
+    text-decoration: none;
+}
 .content h1
 {
     text-align: center;
