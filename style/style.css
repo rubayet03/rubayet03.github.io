@@ -30,11 +30,13 @@ body
     text-decoration: none;
     color: black;
     padding: 0px 20px;
+    cursor: pointer;
 }
 .container
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .projects
@@ -59,7 +61,8 @@ body
     border: 1px solid #000;
     padding: 15px;
     border-radius: 5px;
-    flex-shrink: 0;
+    max-width: 400px;
+    flex-shrink: 1;
 }
 .box a
 {
@@ -71,4 +74,9 @@ body
 .menu .logo:first-child, .links a:hover
 {
     font-weight: 700;
+}
+.home
+{
+    margin-top: 20vh;
+
 }
