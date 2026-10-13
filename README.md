@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Muksitul Hasan Rubayate | Developer Portfolio
 
-# Run and deploy your AI Studio app
+A professional, minimalist personal portfolio website built to showcase software engineering projects, technical skills, and academic background. 
 
-This contains everything you need to run your app locally.
+## 🛠 Tech Stack
+This project is built strictly with vanilla web technologies to ensure maximum performance, clean architecture, and zero dependencies:
+* **HTML5:** Semantic structure, ARIA accessibility features, and JSON-LD structured data for SEO.
+* **CSS3:** Native CSS Grid/Flexbox, custom properties, responsive design, and an understated low-saturation palette.
+* **JavaScript (ES6+):** Vanilla DOM manipulation, Intersection Observers for scroll tracking, and localStorage for theme persistence.
 
-View your app in AI Studio: https://ai.studio/apps/6a0d827a-662b-4224-bd37-bf163249c033
+## ✨ Key Features
+* **Zero Dependencies:** Built without frameworks (no React, Tailwind, or jQuery) and requires no build tools.
+* **Print-Ready CV:** Custom `@media print` stylesheets automatically strip UI elements and expand URLs, formatting the live website into a clean, 2-page physical curriculum vitae.
+* **Editorial Aesthetic:** Brutalist-lite design utilizing typography, negative space, and 1px borders instead of heavy colors or flashy animations.
+* **Accessible:** Includes focus trapping for modals, semantic tab roles, and readable contrast ratios.
 
-## Run Locally
+## 🚀 How to Run Locally
+Because this project relies entirely on native web standards, no package manager (like `npm` or `yarn`) is required.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/rubayet03/rubayet03.github.io.git](https://github.com/rubayet03/rubayet03.github.io.git)
