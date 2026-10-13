@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubayate Hasan | Software Engineer & Backend Developer</title>
+    <meta name="description" content="Portfolio of Muksitul Hasan Rubayate (Rubayate Hasan) - Computer Science & Engineering undergraduate at IUBAT. Specializing in backend web development, relational database design, IoT deep learning computer vision, and C++ OOP systems." />
+    <meta name="keywords" content="Rubayate Hasan, Muksitul Hasan Rubayate, Software Engineer, Backend Developer, C++, Python, PHP, MySQL, YOLOv8, Computer Vision, IUBAT" />
+    <meta name="author" content="Muksitul Hasan Rubayate" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Rubayate Hasan | Software Engineer & Backend Developer" />
+    <meta property="og:description" content="Portfolio of Muksitul Hasan Rubayate (Rubayate Hasan) – Backend Developer building robust web systems, computer vision pipelines, and object-oriented software." />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/108502597" />
+    <meta property="og:url" content="https://ais-dev-mdvobjum3hosmd7c5oxsf4-350029982932.asia-southeast1.run.app" />
+    <meta property="og:site_name" content="Rubayate Hasan Portfolio" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Rubayate Hasan | Software Engineer & Backend Developer" />
+    <meta name="twitter:description" content="Backend systems, relational database architecture, IoT deep learning vision pipelines, and modern C++." />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/108502597" />
+
+    <!-- Schema.org JSON-LD Structured Data: Person Entity -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muksitul Hasan Rubayate",
+      "alternateName": "Rubayate Hasan",
+      "jobTitle": "Backend Developer",
+      "url": "https://ais-dev-mdvobjum3hosmd7c5oxsf4-350029982932.asia-southeast1.run.app",
+      "sameAs": [
+        "https://github.com/rubayet03"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "International University of Business Agriculture & Technology"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Uttara, Dhaka",
+        "postalCode": "1230",
+        "addressCountry": "Bangladesh"
+      },
+      "email": "mailto:rubayethassan98@gmail.com",
+      "telephone": "+8801531321325",
+      "knowsAbout": [
+        "Backend Web Development",
+        "Relational Database Design",
+        "MySQL",
+        "PHP",
+        "Python",
+        "C++",
+        "Ultralytics YOLOv8",
+        "OpenCV",
+        "Role-Based Access Control",
+        "Object-Oriented Design"
+      ],
+      "description": "Computer Science & Engineering undergraduate at IUBAT specializing in backend web platforms, relational database design, IoT deep learning computer vision, and object-oriented systems."
+    }
+    </script>
+
+    <!-- Google Fonts: Poppins & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Vanilla CSS Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- =======================================================================
+         SITE HEADER & ARCHITECTURAL NAVIGATION
+         ======================================================================= -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <div class="brand-wrapper">
+          <a href="#" class="brand-title" aria-label="Rubayate Hasan Portfolio Homepage">
+            Rubayate Hasan
+          </a>
+          <span class="brand-status" title="Current Academic & Career Status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for Internship · Dhaka, BD</span>
+          </span>
+        </div>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#focus" class="nav-link">Focus Areas</a>
+          <a href="#skills" class="nav-link">Technical Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="btn-icon-minimal btn-print-cv" title="Print or Save CV (PDF)" aria-label="Print or Save CV">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+          </button>
+          
+          <button type="button" class="btn-icon-minimal theme-toggle-btn" id="theme-toggle-btn" title="Toggle Theme (Light / Dark)" aria-label="Toggle Theme">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+
+          <button type="button" class="btn-icon-minimal mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle Navigation Menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-drawer" id="mobile-drawer">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#focus" class="mobile-nav-link">Focus Areas</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- =====================================================================
+           HERO SECTION: PROFILE, BIOGRAPHY & SPECS
+           ===================================================================== -->
+      <section class="hero-section" id="about">
+        <div class="container hero-grid">
+          <div class="hero-main">
+            <div class="hero-names">
+              <span class="hero-full-name">Muksitul Hasan Rubayate</span>
+              <h1 class="hero-display-name">Rubayate Hasan</h1>
+            </div>
+
+            <p class="hero-tagline">
+              Aspiring Software Engineer & Backend Developer building robust web systems, computer vision pipelines, and object-oriented software.
+            </p>
+
+            <p class="hero-bio">
+              Computer Science & Engineering undergraduate at the International University of Business Agriculture & Technology (IUBAT). Experienced in developing secure, database-driven web platforms using PHP and MySQL, IoT-connected deep learning vision pipelines using Python and YOLOv8, and modular software simulations in C++. Actively seeking software engineering internship opportunities to contribute to real-world software solutions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-solid">
+                <span>View Engineering Projects</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="#contact" class="btn-outline">
+                <span>Get in Touch</span>
+              </a>
+              <button type="button" class="btn-outline" data-copy="rubayethassan98@gmail.com" title="Copy Email to Clipboard">
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Architectural Specification Card (Right Rail) -->
+          <aside class="hero-specs-card reveal-on-scroll" aria-label="Technical Profile Specifications">
+            <div class="spec-header">
+              <span class="spec-header-title">Developer Dossier</span>
+              <span class="mono" style="font-size: 0.7rem; color: var(--text-muted);">REF // RH-2026</span>
+            </div>
+
+            <div class="spec-list">
+              <div class="spec-row">
+                <span class="spec-label">Full Name</span>
+                <span class="spec-value">Muksitul Hasan Rubayate</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Location</span>
+                <span class="spec-value">Uttara, Dhaka – 1230, Bangladesh</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Education</span>
+                <span class="spec-value">B.Sc. in CSE, IUBAT (Spring 2024 – Present)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Availability</span>
+                <span class="spec-value">Software Engineering Internships</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Email</span>
+                <div class="spec-value">
+                  <a href="mailto:rubayethassan98@gmail.com" class="spec-link">rubayethassan98@gmail.com</a>
+                  <button type="button" class="copy-inline-btn" data-copy="rubayethassan98@gmail.com" title="Copy Email">Copy</button>
+                </div>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Phone</span>
+                <div class="spec-value">
+                  <a href="tel:+8801531321325" class="spec-link">+880 1531321325</a>
+                  <button type="button" class="copy-inline-btn" data-copy="+8801531321325" title="Copy Phone Number">Copy</button>
+                </div>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">GitHub</span>
+                <div class="spec-value">
+                  <a href="https://github.com/rubayet03" target="_blank" rel="noopener noreferrer" class="spec-link">
+                    github.com/rubayet03
+                    <span aria-hidden="true" style="font-size: 0.75rem;">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           CORE FOCUS AREAS
+           ===================================================================== -->
+      <section class="section" id="focus">
+        <div class="container">
+          <header class="section-header reveal-on-scroll">
+            <span class="eyebrow">Disciplines & Specializations</span>
+            <h2 class="section-title">Core Focus Areas</h2>
+            <p class="section-subtitle">
+              Applied engineering disciplines centered on data integrity, distributed edge inference, and clean algorithmic modeling.
+            </p>
+          </header>
+
+          <div class="focus-grid">
+            <!-- Focus Area 1 -->
+            <article class="focus-card reveal-on-scroll">
+              <div class="focus-card-top">
+                <span class="focus-number">01 / ARCHITECTURE</span>
+                <h3 class="focus-title">Backend Web Development & Relational Database Design</h3>
+                <p class="focus-description">
+                  Engineering secure, database-driven web platforms with normalized schemas (3NF), robust foreign key constraints, atomic transactions (ACID), and granular Role-Based Access Control (RBAC).
+                </p>
+              </div>
+              <div class="focus-meta">
+                <span>PHP OOP</span>
+                <span aria-hidden="true">·</span>
+                <span>MySQL InnoDB</span>
+                <span aria-hidden="true">·</span>
+                <span>3NF Schemas</span>
+                <span aria-hidden="true">·</span>
+                <span>RBAC Security</span>
+              </div>
+            </article>
+
+            <!-- Focus Area 2 -->
+            <article class="focus-card reveal-on-scroll">
+              <div class="focus-card-top">
+                <span class="focus-number">02 / EMBEDDED AI</span>
+                <h3 class="focus-title">Embedded IoT Computer Vision & Deep Learning Inference</h3>
+                <p class="focus-description">
+                  Architecting decoupled edge acquisition pipelines that stream image frames from microcontrollers to host GPU servers for real-time neural inference with Ultralytics YOLOv8 and OpenCV.
+                </p>
+              </div>
+              <div class="focus-meta">
+                <span>Python</span>
+                <span aria-hidden="true">·</span>
+                <span>Ultralytics YOLOv8</span>
+                <span aria-hidden="true">·</span>
+                <span>OpenCV</span>
+                <span aria-hidden="true">·</span>
+                <span>ESP32-CAM</span>
+              </div>
+            </article>
+
+            <!-- Focus Area 3 -->
+            <article class="focus-card reveal-on-scroll">
+              <div class="focus-card-top">
+                <span class="focus-number">03 / SYSTEMS</span>
+                <h3 class="focus-title">Object-Oriented Architecture & Algorithmic Problem Solving</h3>
+                <p class="focus-description">
+                  Designing modular software systems adhering to SOLID principles, runtime polymorphism, clean abstract interfaces, and deterministic memory resource management (RAII) in C++.
+                </p>
+              </div>
+              <div class="focus-meta">
+                <span>C / C++</span>
+                <span aria-hidden="true">·</span>
+                <span>Polymorphism</span>
+                <span aria-hidden="true">·</span>
+                <span>Data Structures</span>
+                <span aria-hidden="true">·</span>
+                <span>File I/O Streams</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           TECHNICAL SKILLS MATRIX
+           ===================================================================== -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section-header reveal-on-scroll">
+            <span class="eyebrow">Technical Capability Matrix</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+              Comprehensive inventory of programming languages, database systems, computer vision libraries, and software engineering competencies.
+            </p>
+          </header>
+
+          <div class="skills-matrix">
+            <!-- Programming Languages -->
+            <div class="skill-panel reveal-on-scroll">
+              <div class="skill-panel-header">
+                <h3 class="skill-panel-title">Programming Languages</h3>
+                <span class="skill-panel-count">7 Languages</span>
+              </div>
+              <div class="skill-panel-body">
+                <div class="skill-list-editorial">
+                  <div class="skill-item-row">
+                    <span class="skill-name">C</span>
+                    <span class="skill-detail">Procedural & Low-Level Memory</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">C++</span>
+                    <span class="skill-detail">OOP, Polymorphism, RAII, STL</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Python 3.x</span>
+                    <span class="skill-detail">Vision Pipelines, Scripts, Automation</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">PHP</span>
+                    <span class="skill-detail">OOP & Procedural Web Backends</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-detail">DOM Manipulation, Fetch API, ES6+</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-detail">Semantic Document Architecture</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">CSS3</span>
+                    <span class="skill-detail">Grid, Flexbox, Print CSS, Responsive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks, Libraries & Databases -->
+            <div class="skill-panel reveal-on-scroll">
+              <div class="skill-panel-header">
+                <h3 class="skill-panel-title">Frameworks, Libraries & Databases</h3>
+                <span class="skill-panel-count">6 Technologies</span>
+              </div>
+              <div class="skill-panel-body">
+                <div class="skill-list-editorial">
+                  <div class="skill-item-row">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-detail">InnoDB, 3NF Normalization, ACID Transactions</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Ultralytics YOLOv8</span>
+                    <span class="skill-detail">Custom Object Detection & Inference</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">OpenCV</span>
+                    <span class="skill-detail">Frame Preprocessing & Optical Transformation</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Tailwind CSS</span>
+                    <span class="skill-detail">Utility-First Responsive UI Styling</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Chart.js</span>
+                    <span class="skill-detail">Interactive Data & Warehouse Telemetry</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Arduino IDE & ESP32 Core</span>
+                    <span class="skill-detail">Microcontroller Firmware & Wi-Fi Streaming</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Tools & Environments -->
+            <div class="skill-panel reveal-on-scroll">
+              <div class="skill-panel-header">
+                <h3 class="skill-panel-title">Tools & Developer Environments</h3>
+                <span class="skill-panel-count">4 Toolchains</span>
+              </div>
+              <div class="skill-panel-body">
+                <div class="skill-list-editorial">
+                  <div class="skill-item-row">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-detail">Distributed Version Control & Branching</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">GitHub</span>
+                    <span class="skill-detail">Repository Management & Issue Tracking</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">VS Code</span>
+                    <span class="skill-detail">Primary IDE & Debugging Workflows</span>
+                  </div>
+                  <div class="skill-item-row">
+                    <span class="skill-name">Apache Server</span>
+                    <span class="skill-detail">HTTP Server Configuration, Virtual Hosts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Software Engineering Competencies -->
+            <div class="skill-panel reveal-on-scroll">
+              <div class="skill-panel-header">
+                <h3 class="skill-panel-title">Core Competencies</h3>
+                <span class="skill-panel-count">4 Domains</span>
+              </div>
+              <div class="skill-panel-body">
+                <div class="competency-grid">
+                  <div class="competency-item">
+                    <h4 class="competency-title">Role-Based Access Control</h4>
+                    <p class="competency-desc">Enforcing strict multi-tenant authorization boundaries and session validation.</p>
+                  </div>
+                  <div class="competency-item">
+                    <h4 class="competency-title">Object-Oriented Design</h4>
+                    <p class="competency-desc">Applying abstraction, encapsulation, inheritance, and runtime polymorphism.</p>
+                  </div>
+                  <div class="competency-item">
+                    <h4 class="competency-title">Algorithm Design</h4>
+                    <p class="competency-desc">Time and space complexity optimization and structured data structure selection.</p>
+                  </div>
+                  <div class="competency-item">
+                    <h4 class="competency-title">Web Security</h4>
+                    <p class="competency-desc">PDO parametrization, SQL injection defense, CSRF mitigation, and input sanitization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           EDUCATIONAL BACKGROUND
+           ===================================================================== -->
+      <section class="section" id="education">
+        <div class="container">
+          <header class="section-header reveal-on-scroll">
+            <span class="eyebrow">Academic Progression</span>
+            <h2 class="section-title">Educational Background</h2>
+            <p class="section-subtitle">
+              Formal university computer science curriculum emphasizing computer architecture, algorithms, and software engineering.
+            </p>
+          </header>
+
+          <div class="education-wrapper">
+            <article class="education-card reveal-on-scroll">
+              <div class="edu-timeline-rail">
+                <div>
+                  <span class="edu-period">Spring 2024 – Present</span>
+                  <div class="edu-badge-text">Undergraduate Program</div>
+                </div>
+                <div class="edu-location">
+                  <span>Uttara, Dhaka</span><br />
+                  <span>Bangladesh</span>
+                </div>
+              </div>
+
+              <div class="edu-content">
+                <div>
+                  <h3 class="edu-degree">Bachelor of Science in Computer Science & Engineering (B.Sc. in CSE)</h3>
+                  <div class="edu-institution">International University of Business Agriculture & Technology (IUBAT)</div>
+                </div>
+
+                <div class="edu-details-grid">
+                  <div class="edu-detail-block">
+                    <h4>Core Coursework Foundations</h4>
+                    <p>
+                      Data Structures & Algorithms, Object-Oriented Programming (C++ & Java), Database Management Systems (DBMS), Operating Systems, Discrete Mathematics, and Computer Networks.
+                    </p>
+                  </div>
+
+                  <div class="edu-detail-block">
+                    <h4>Practical & Lab Focus</h4>
+                    <p>
+                      Hands-on engineering laboratories covering relational schema normalization (3NF), multi-threaded systems programming, algorithmic complexity analysis, and embedded IoT experimentation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           FEATURED PROJECTS
+           ===================================================================== -->
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section-header reveal-on-scroll">
+            <span class="eyebrow">Engineering Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Production-focused web platforms, embedded deep learning computer vision pipelines, and modular object-oriented software.
+            </p>
+          </header>
+
+          <!-- Interactive Filter Controls (WAI-ARIA Tablist) -->
+          <div class="projects-filter-bar">
+            <div class="filter-button-group" role="tablist" aria-label="Filter Projects by Category">
+              <button
+                type="button"
+                class="filter-btn active"
+                data-filter="all"
+                id="tab-all"
+                role="tab"
+                aria-selected="true"
+                aria-controls="projects-grid"
+                tabindex="0"
+              >
+                All Projects (5)
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="backend"
+                id="tab-backend"
+                role="tab"
+                aria-selected="false"
+                aria-controls="projects-grid"
+                tabindex="-1"
+              >
+                Backend & Databases
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="vision"
+                id="tab-vision"
+                role="tab"
+                aria-selected="false"
+                aria-controls="projects-grid"
+                tabindex="-1"
+              >
+                Computer Vision & IoT
+              </button>
+              <button
+                type="button"
+                class="filter-btn"
+                data-filter="systems"
+                id="tab-systems"
+                role="tab"
+                aria-selected="false"
+                aria-controls="projects-grid"
+                tabindex="-1"
+              >
+                Systems & C++
+              </button>
+            </div>
+
+            <span class="projects-counter" id="project-count-display">
+              Showing 5 of 5 Projects
+            </span>
+          </div>
+
+          <!-- Project Cards Grid (WAI-ARIA Tabpanel) -->
+          <div class="projects-grid" id="projects-grid" role="tabpanel" aria-labelledby="tab-all">
+            <!-- Project 1 -->
+            <article class="project-card reveal-on-scroll" data-category="backend">
+              <div class="project-index">
+                <span class="project-index-num">01</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-category-text">Backend Web & Database</span>
+                  <span class="project-benchmark">InnoDB Transactions · 3NF Schema</span>
+                </div>
+
+                <h3 class="project-title">Fabric Inventory & Warehouse Management System</h3>
+
+                <p class="project-description">
+                  A role-restricted ERP web application built to digitize paper ledgers in industrial textile facilities. Engineered with a 3NF-normalized relational database schema, automated threshold-based low-stock alerts, procurement order workflows, and CSS print-optimized audit reports.
+                </p>
+
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span>PHP</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>MySQL</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>JavaScript</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>Chart.js</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>HTML/CSS</span>
+                </div>
+
+                <div class="project-actions">
+                  <button type="button" class="btn-inspect" data-project="fabric_inventory" aria-haspopup="dialog">
+                    <span>Inspect Architecture</span>
+                    <span aria-hidden="true">⊕</span>
+                  </button>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">Status: Complete</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal-on-scroll" data-category="vision">
+              <div class="project-index">
+                <span class="project-index-num">02</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-category-text">Embedded IoT & Computer Vision</span>
+                  <span class="project-benchmark">Evaluated Accuracy: 0.928 mAP@0.5</span>
+                </div>
+
+                <h3 class="project-title">IoT-Enabled Real-Time Fruit Detection System</h3>
+
+                <p class="project-description">
+                  A hybrid IoT vision pipeline streaming image frames from an ESP32-CAM to a host workstation for external GPU-accelerated deep learning inference. Solves edge resource bottlenecks by decoupling acquisition from neural computation, achieving 0.928 mAP@0.5.
+                </p>
+
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span>Python</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>YOLOv8</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>OpenCV</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>C++</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>ESP32-CAM</span>
+                </div>
+
+                <div class="project-actions">
+                  <button type="button" class="btn-inspect" data-project="fruit_detection" aria-haspopup="dialog">
+                    <span>Inspect Architecture</span>
+                    <span aria-hidden="true">⊕</span>
+                  </button>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">Benchmark: 0.928 mAP</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal-on-scroll" data-category="systems">
+              <div class="project-index">
+                <span class="project-index-num">03</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-category-text">Systems & Object-Oriented Software</span>
+                  <span class="project-benchmark">Runtime Polymorphism · RAII Pattern</span>
+                </div>
+
+                <h3 class="project-title">Object-Oriented Smart Irrigation System Simulation</h3>
+
+                <p class="project-description">
+                  A modular C++ simulation engineered around runtime polymorphism and abstract interfaces to automate agricultural watering based on soil moisture levels. Incorporates deterministic moisture decay mathematical formulas and robust persistent file I/O logging.
+                </p>
+
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span>C++</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>OOP Principles</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>File I/O Streams</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>Virtual Dispatch</span>
+                </div>
+
+                <div class="project-actions">
+                  <button type="button" class="btn-inspect" data-project="irrigation_system" aria-haspopup="dialog">
+                    <span>Inspect Architecture</span>
+                    <span aria-hidden="true">⊕</span>
+                  </button>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">Simulation Engine</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card reveal-on-scroll" data-category="backend">
+              <div class="project-index">
+                <span class="project-index-num">04</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-category-text">Full-Stack Web & Security</span>
+                  <span class="project-benchmark">Multi-Tier RBAC · ACID Guarantees</span>
+                </div>
+
+                <h3 class="project-title">Multi-Role Survey & Feedback Management Platform</h3>
+
+                <p class="project-description">
+                  A full-stack survey platform featuring an interactive client-side form builder, multi-tier RBAC administrative dashboards, and atomic database transaction guarantees that prevent partial submissions and maintain audit trace consistency.
+                </p>
+
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span>PHP</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>MySQL</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>JavaScript</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>Tailwind CSS</span>
+                </div>
+
+                <div class="project-actions">
+                  <button type="button" class="btn-inspect" data-project="survey_platform" aria-haspopup="dialog">
+                    <span>Inspect Architecture</span>
+                    <span aria-hidden="true">⊕</span>
+                  </button>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">Status: Deployed</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card reveal-on-scroll" data-category="systems">
+              <div class="project-index">
+                <span class="project-index-num">05</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-category-text">Front-End Architecture</span>
+                  <span class="project-benchmark">Zero Frameworks · Native Web Standards</span>
+                </div>
+
+                <h3 class="project-title">Personal Portfolio Website</h3>
+
+                <p class="project-description">
+                  A multi-page personal developer portfolio built with semantic HTML5, modern CSS, and vanilla JavaScript. Features an editorial minimalist design system, strict zero-pill metadata typography, and built-in curriculum vitae print stylesheets.
+                </p>
+
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span>HTML5</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>CSS3</span>
+                  <span class="tech-separator" aria-hidden="true">·</span>
+                  <span>Vanilla JavaScript</span>
+                </div>
+
+                <div class="project-actions">
+                  <button type="button" class="btn-inspect" data-project="portfolio_website" aria-haspopup="dialog">
+                    <span>Inspect Architecture</span>
+                    <span aria-hidden="true">⊕</span>
+                  </button>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">Current Site</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           CONTACT & DIRECT INQUIRIES
+           ===================================================================== -->
+      <section class="section" id="contact">
+        <div class="container">
+          <header class="section-header reveal-on-scroll">
+            <span class="eyebrow">Direct Communications</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Available for software engineering internship discussions, backend web development roles, or technical collaboration.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <!-- Left Panel: Direct Channels -->
+            <div class="contact-info-panel reveal-on-scroll">
+              <div class="contact-direct-list">
+                <!-- Channel 1: Email -->
+                <div class="contact-item">
+                  <div class="contact-channel">
+                    <span class="channel-label">Email Address</span>
+                    <a href="mailto:rubayethassan98@gmail.com" class="channel-value">rubayethassan98@gmail.com</a>
+                  </div>
+                  <button type="button" class="contact-action-btn" data-copy="rubayethassan98@gmail.com" title="Copy email address">
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <!-- Channel 2: Phone -->
+                <div class="contact-item">
+                  <div class="contact-channel">
+                    <span class="channel-label">Telephone / Mobile</span>
+                    <a href="tel:+8801531321325" class="channel-value">+880 1531321325</a>
+                  </div>
+                  <button type="button" class="contact-action-btn" data-copy="+8801531321325" title="Copy phone number">
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <!-- Channel 3: GitHub -->
+                <div class="contact-item">
+                  <div class="contact-channel">
+                    <span class="channel-label">GitHub Repository</span>
+                    <a href="https://github.com/rubayet03" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/rubayet03</a>
+                  </div>
+                  <a href="https://github.com/rubayet03" target="_blank" rel="noopener noreferrer" class="contact-action-btn" title="Visit GitHub profile">
+                    <span>Visit ↗</span>
+                  </a>
+                </div>
+
+                <!-- Channel 4: Location -->
+                <div class="contact-item">
+                  <div class="contact-channel">
+                    <span class="channel-label">Physical Location</span>
+                    <span class="channel-value">Uttara, Dhaka – 1230, Bangladesh</span>
+                  </div>
+                  <span class="mono" style="font-size: 0.7rem; color: var(--text-muted);">UTC+6 (BST)</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.825rem; color: var(--text-muted); line-height: 1.6; margin-top: 1rem;">
+                <p>
+                  Recruiters and engineering managers can also trigger a formal printable curriculum vitae layout directly via your browser using <kbd style="font-family: var(--font-mono); padding: 0.15rem 0.35rem; background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: 2px;">Ctrl + P</kbd> / <kbd style="font-family: var(--font-mono); padding: 0.15rem 0.35rem; background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: 2px;">Cmd + P</kbd> or the print button in the navigation bar.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Panel: Message Drafter -->
+            <div class="contact-form-panel reveal-on-scroll">
+              <h3 class="form-title">Draft an Inquiry</h3>
+              <form id="contact-inquiry-form" novalidate>
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">Your Name</label>
+                  <input type="text" id="sender-name" class="form-input" placeholder="e.g. Jane Doe (Tech Lead)" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">Your Email</label>
+                  <input type="email" id="sender-email" class="form-input" placeholder="e.g. jane.doe@company.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-subject" class="form-label">Subject</label>
+                  <input type="text" id="sender-subject" class="form-input" value="Software Engineering Internship Opportunity" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message" class="form-label">Message</label>
+                  <textarea id="sender-message" class="form-textarea" placeholder="Describe the role, project, or schedule inquiry..." required>Hi Rubayate,
+
+I reviewed your portfolio and would like to discuss an opportunity...</textarea>
+                </div>
+
+                <div id="form-status-message" class="form-status" role="alert" aria-live="polite"></div>
+
+                <button type="submit" class="btn-solid" style="width: 100%;">
+                  <span>Open in Mail Client (rubayethassan98@gmail.com)</span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =======================================================================
+         FOOTER & COLOPHON
+         ======================================================================= -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-colophon">
+          <div>
+            <strong>Muksitul Hasan Rubayate</strong> (Rubayate Hasan) · Software Engineering Undergraduate
+          </div>
+          <div>
+            International University of Business Agriculture & Technology (IUBAT) · Uttara, Dhaka, Bangladesh
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">
+            Engineered strictly with Vanilla HTML5, CSS3, and JavaScript. Zero external frameworks.
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#about" class="footer-link">Back to Top ↑</a>
+          <a href="https://github.com/rubayet03" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+          <button type="button" class="footer-link btn-print-cv" style="cursor: pointer;">Print CV</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =======================================================================
+         PROJECT ARCHITECTURE INSPECTOR MODAL
+         ======================================================================= -->
+    <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
+      <div class="modal-dialog" role="document" tabindex="-1">
+        <header class="modal-header">
+          <div class="modal-header-titles">
+            <span class="modal-kicker" id="modal-project-category">Category</span>
+            <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+          </div>
+          <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close Architecture Inspector">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal-body">
+          <!-- Overview Section -->
+          <section class="modal-blueprint-section">
+            <h3 class="blueprint-heading">System Overview & Objective</h3>
+            <p class="blueprint-text" id="modal-project-overview"></p>
+          </section>
+
+          <!-- Architectural Specifications Table -->
+          <section class="modal-blueprint-section">
+            <h3 class="blueprint-heading">Architectural & System Specifications</h3>
+            <table class="blueprint-specs-table">
+              <tbody id="modal-specs-table-body">
+                <!-- Dynamically populated via script.js -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Engineering Highlights -->
+          <section class="modal-blueprint-section">
+            <h3 class="blueprint-heading">Key Engineering Decisions & Implementations</h3>
+            <ul class="blueprint-list" id="modal-highlights-list">
+              <!-- Dynamically populated via script.js -->
+            </ul>
+          </section>
+
+          <!-- Metadata -->
+          <section class="modal-blueprint-section" style="border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.775rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+              <div><strong>Role:</strong> <span id="modal-project-role"></span></div>
+              <div><strong>Technology Stack:</strong> <span id="modal-project-stack"></span></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Vanilla Script -->
+    <script defer src="./script.js"></script>
+  </body>
+</html>
